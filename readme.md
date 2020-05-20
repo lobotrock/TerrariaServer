@@ -12,3 +12,8 @@ This will create a dockerized server of Terraria 1.4.0.2 and port 7777.  It save
 ```bash
 ./start_server.sh
 ```
+
+Or to start in a detached screen:
+```bash
+screen -d -m ./start_server.sh 
+```

@@ -20,4 +20,4 @@ mkdir -p World
 
 # Build and run Docker image
 docker build -t terraria .
-docker run -it -v /home/drewalbrecht/PycharmProjects/KubernetesPlayground/terraria/World:/terraria/World -v /terraria/WorldDir -p 7777:7777 terraria
+docker run -it -v $(pwd)/World:/terraria/World -p 7777:7777 terraria
