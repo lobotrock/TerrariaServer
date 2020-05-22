@@ -1,6 +1,6 @@
 # Starting a terraria dedicated server in docker in Linux
 
-This will create a dockerized server of Terraria 1.4.0.2 and port 7777.  It saves the world files in the directory `World`.
+This will create a dockerized server of Terraria 1.4.0.3 and port 7777.  It saves the world files in the directory `World`.
 
 ## Requirements
 - [Docker](https://docs.docker.com/get-docker/)

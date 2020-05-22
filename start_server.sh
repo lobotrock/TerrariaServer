@@ -2,17 +2,17 @@
 
 if [ ! -d "Linux" ]; then
   # Downloading server
-  curl -X GET https://terraria.org/system/dedicated_servers/archives/000/000/036/original/terraria-server-1402.zip?1589675482 --output terraria-server-1402.zip
+  curl -X GET https://terraria.org/system/dedicated_servers/archives/000/000/037/original/terraria-server-1403.zip?1590018631 --output terraria-server.zip
 
   # Unzip downloaded server
-  unzip -o terraria-server-1402.zip
+  unzip -o terraria-server.zip
 
   # Move Linux resources to current directory
-  mv 1402/Linux .
+  mv 1403/Linux .
 
   # Clean up files
-  rm -rf 1402
-  rm -rf terraria-server-1402.zip
+  rm -rf 1403
+  rm -rf terraria-server.zip
 fi
 
 # Creating World Directory if it doesn't exist
