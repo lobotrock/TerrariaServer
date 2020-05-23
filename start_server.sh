@@ -1,18 +1,9 @@
 #!/bin/bash
 
 if [ ! -d "Linux" ]; then
-  # Downloading server
-  curl -X GET https://terraria.org/system/dedicated_servers/archives/000/000/037/original/terraria-server-1403.zip?1590018631 --output terraria-server.zip
-
-  # Unzip downloaded server
-  unzip -o terraria-server.zip
-
-  # Move Linux resources to current directory
-  mv 1403/Linux .
-
-  # Clean up files
-  rm -rf 1403
-  rm -rf terraria-server.zip
+  # Find latest server download
+  docker build -t download-latest-terraria -f ./download_latest_server/Dockerfile ./download_latest_server
+  docker run -it -v $(pwd):/output download-latest-terraria
 fi
 
 # Creating World Directory if it doesn't exist
